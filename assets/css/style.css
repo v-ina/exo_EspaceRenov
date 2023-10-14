@@ -1,0 +1,171 @@
+ /* ----------global----------  */
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato/Lato-Regular.ttf);
+}
+
+
+ /* ----------navbar----------  */
+ .monnavbar{
+    background-color: #112E3E;
+    height: 145px;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: 3px;
+}
+.monnavbar-img-div{
+    height: 145px;
+    padding-left: 10%;
+}
+.monnavbar-brand img {
+    width: 250px;
+}
+.monnavbar-brand:hover{
+    filter: brightness(0.7);
+}
+.navbar-toggler{   /*클릭한 뒤 버거메뉴 밖에 생기는 진한 보더 없애기*/
+    color: transparent;
+    border: none;
+}
+.navbar-toggler-icon{   /*버거메뉴 아이콘이 이미지라서 이미지로 다운받음*/
+    background-image: url(../img/icons8-menu-50\ -1.png);
+}
+.navbar-toggler-icon:hover{
+    background-image: url(../img/icons8-menu-50.png);
+}
+.monnavbar-list{
+    padding-right: 10%;
+}
+
+
+ /* ----------banner----------  */
+.monslide-img{
+    height: 500px;
+}
+#section-banner h2{
+    letter-spacing: 3px;
+}
+.yello{
+    color: #EDD154;
+}
+.monpadding-slide{
+    padding-left: 150px;
+}
+.monbtn-slide button{
+    height: 18px !important;
+    width: 18px !important;
+    margin: 5px 5px !important;
+}
+.monbtn-slide{
+    margin-bottom: 0px;
+}
+.monbtn-slide [data-bs-target]{
+    background-color: white !important;
+    opacity: 1;
+}
+.monbtn-slide .active{
+    background-color: #112e3e !important;
+}
+
+
+ /* ----------section about----------  */
+.monbtn{
+    background-color: #112E3E;
+    border: 0px solid;
+    padding: 1rem 2rem;
+}
+.monbtn:hover{
+    background-color: #21485d;
+}
+
+
+ /* ----------section realisation----------  */
+
+ /* ----------section contact----------  */
+
+ /* ----------footer----------  */
+.monfooter > div > div:nth-child(2){
+    text-align: left;
+}
+.monfooter > div > div:nth-child(3){
+    border-left: 1px solid white;
+}
+.monfooter{
+    background-color: #112E3E;
+}
+.monfooter-img img{
+    width: 230px;
+}
+p.monfooter{
+    color: white;
+}
+p.monfooter > a{
+    text-decoration: none;
+    color: white;
+}
+p.monfooter > a:hover{
+    color: #EDD154;
+}
+.monfooter-sns > div a{
+    color: #112e3e;
+    background-color: white;
+}
+.monfooter-sns >div a:nth-child(1){
+    padding: 5px 11px;
+    border-radius: 100%;
+}
+.monfooter-sns >div a:nth-child(2){
+    padding: 5px 9px;
+    border-radius: 100%;
+}
+.monfooter-sns > div a:hover{
+    color: white;
+    background-color: #112E3E;
+}
+
+
+/* ----------responsible---------- */
+/* 1. 태블릿보다 클때 즉, pc일때 */
+@media screen and (min-width:992px) {
+    .monnavbar-list > li:first-child{
+        display: none;
+    }
+    .monnavbar-list li{
+        border-bottom: none;
+        height: 30px;
+        padding: 0 20px 0 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .monnavbar-list li:not(:last-child){
+        border-right: 1px solid white;
+    }
+    .monnavbar-list a{
+        color: white;
+        transition: 0.3s color ease-in-out;
+    }
+    .monnavbar-list a:hover{
+        color: #EDD154;
+    }
+
+}
+
+/* 2. 태블릿이거나, 태블릿보다 작을때 */
+@media screen and (max-width:991px){
+    a.nav-link{
+        color: #EDD154;
+        border-bottom: 1px solid #EDD154;
+        background-color: #112E3E;
+        height: 50px;
+        padding: 12px 40px;
+        width: 111%;
+    }
+    a.nav-link:hover{
+        color: #b49e40;
+    }
+    .monnavbar-list a{
+        padding-left: 80px;
+    }
+}
